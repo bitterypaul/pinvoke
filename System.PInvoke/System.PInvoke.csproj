@@ -1,0 +1,240 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="3.5" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{8448AB43-3519-4908-B701-F8C4C754B175}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>System.PInvoke</RootNamespace>
+    <AssemblyName>System.PInvoke</AssemblyName>
+    <TargetFrameworkVersion>v2.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkSubset>
+    </TargetFrameworkSubset>
+    <StartupObject>
+    </StartupObject>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <DocumentationFile>
+    </DocumentationFile>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <DocumentationFile>System.PInvoke.xml</DocumentationFile>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Windows\Brush.cs" />
+    <Compile Include="Windows\Capture.cs" />
+    <Compile Include="Windows\Caret.cs" />
+    <Compile Include="Windows\ChangeNotification.cs" />
+    <Compile Include="Windows\Clipboard.cs" />
+    <Compile Include="Windows\ClipRegion.cs" />
+    <Compile Include="Windows\CommonControl.cs" />
+    <Compile Include="Windows\CommonDialog.cs" />
+    <Compile Include="Windows\Compress.cs" />
+    <Compile Include="Windows\Delegates\IUnknownVtbl_AddRef.cs" />
+    <Compile Include="Windows\Delegates\IUnknownVtbl_QueryInterface.cs" />
+    <Compile Include="Windows\Delegates\IUnknownVtbl_Release.cs" />
+    <Compile Include="Windows\Delegates\LPCCHOOKPROC.cs" />
+    <Compile Include="Windows\Delegates\LPCFHOOKPROC.cs" />
+    <Compile Include="Windows\Delegates\LPFRHOOKPROC.cs" />
+    <Compile Include="Windows\Delegates\LPOFNHOOKPROC.cs" />
+    <Compile Include="Windows\Delegates\LPPAGEPAINTHOOK.cs" />
+    <Compile Include="Windows\Delegates\LPPAGESETUPHOOK.cs" />
+    <Compile Include="Windows\Delegates\LPPRINTHOOKPROC.cs" />
+    <Compile Include="Windows\Delegates\LPSETUPHOOKPROC.cs" />
+    <Compile Include="Windows\Delegates\MSGBOXCALLBACK.cs" />
+    <Compile Include="Windows\Enums\BrushStyle.cs" />
+    <Compile Include="Windows\Enums\ChooseColorInput.cs" />
+    <Compile Include="Windows\Enums\ClipboardFormat.cs" />
+    <Compile Include="Windows\Enums\ClippingRegionType.cs" />
+    <Compile Include="Windows\Enums\CollationOption.cs" />
+    <Compile Include="Windows\Enums\ColorMatchingOption.cs" />
+    <Compile Include="Windows\Enums\CommonDialogError.cs" />
+    <Compile Include="Windows\Enums\ControlClassType.cs" />
+    <Compile Include="Windows\Enums\DisplayFixedOutput.cs" />
+    <Compile Include="Windows\Enums\DisplayFlag.cs" />
+    <Compile Include="Windows\Enums\DisplayOrientation.cs" />
+    <Compile Include="Windows\Enums\DitherType.cs" />
+    <Compile Include="Windows\Enums\FileNotifyChange.cs" />
+    <Compile Include="Windows\Enums\ChooseFontOption.cs" />
+    <Compile Include="Windows\Enums\FileSeekOrigin.cs" />
+    <Compile Include="Windows\Enums\FindReplaceFlag.cs" />
+    <Compile Include="Windows\Enums\FontType.cs" />
+    <Compile Include="Windows\Enums\GradientFillMode.cs" />
+    <Compile Include="Windows\BitBlockTransfer.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Windows\ActiveDirectory.cs" />
+    <Compile Include="Windows\AuxiliaryOutputDevice.cs" />
+    <Compile Include="Windows\AVI.cs" />
+    <Compile Include="Windows\Bitmap.cs" />
+    <Compile Include="Windows\Delegates\BFFCALLBACK.cs" />
+    <Compile Include="Windows\Enums\AccessMode.cs" />
+    <Compile Include="Windows\Enums\ColorAdjustmentFilter.cs" />
+    <Compile Include="Windows\Enums\DialogBoxResult.cs" />
+    <Compile Include="Windows\Enums\FillType.cs" />
+    <Compile Include="Windows\Enums\HatchStyle.cs" />
+    <Compile Include="Windows\Enums\HelpContext.cs" />
+    <Compile Include="Windows\Enums\ICMHandlingOption.cs" />
+    <Compile Include="Windows\Enums\InitializationFlag.cs" />
+    <Compile Include="Windows\Enums\JobNotifyField.cs" />
+    <Compile Include="Windows\Enums\JoyStatus.cs" />
+    <Compile Include="Windows\Enums\LogicalColorSpace.cs" />
+    <Compile Include="Windows\Enums\DIBColorTable.cs" />
+    <Compile Include="Windows\Enums\ImageCopyOperation.cs" />
+    <Compile Include="Windows\Enums\ImageCopyOption.cs" />
+    <Compile Include="Windows\Enums\LightSource.cs" />
+    <Compile Include="Windows\Enums\LZErrorCode.cs" />
+    <Compile Include="Windows\Enums\MessageBoxStyle.cs" />
+    <Compile Include="Windows\Enums\MMResult.cs" />
+    <Compile Include="Windows\Enums\FileDialogOption.cs" />
+    <Compile Include="Windows\Enums\OpenFileMode.cs" />
+    <Compile Include="Windows\Enums\OSBuildNumber.cs" />
+    <Compile Include="Windows\Enums\OSPlatformId.cs" />
+    <Compile Include="Windows\Enums\OSProductType.cs" />
+    <Compile Include="Windows\Enums\OSSuites.cs" />
+    <Compile Include="Windows\Enums\OSVersion.cs" />
+    <Compile Include="Windows\Enums\PageSetup.cs" />
+    <Compile Include="Windows\Enums\PaperSize.cs" />
+    <Compile Include="Windows\Enums\PaperSource.cs" />
+    <Compile Include="Windows\Enums\PathValueType.cs" />
+    <Compile Include="Windows\Enums\AuxiliaryAudioOutput.cs" />
+    <Compile Include="Windows\Enums\AviCompression.cs" />
+    <Compile Include="Windows\Enums\AviError.cs" />
+    <Compile Include="Windows\Enums\AviIndexEntry.cs" />
+    <Compile Include="Windows\Enums\AviStreamInfo.cs" />
+    <Compile Include="Windows\Enums\BitCount.cs" />
+    <Compile Include="Windows\Enums\BitmapCompression.cs" />
+    <Compile Include="Windows\Enums\CompressionDialog.cs" />
+    <Compile Include="Windows\Enums\DialogBoxBehavior.cs" />
+    <Compile Include="Windows\Enums\ManufacturerID.cs" />
+    <Compile Include="Windows\Enums\PFDBitFlag.cs" />
+    <Compile Include="Windows\Enums\PixelType.cs" />
+    <Compile Include="Windows\Enums\PrintDialogResult.cs" />
+    <Compile Include="Windows\Enums\PrinterChangeStatus.cs" />
+    <Compile Include="Windows\Enums\PrinterColorMode.cs" />
+    <Compile Include="Windows\Enums\PrinterDuplexMode.cs" />
+    <Compile Include="Windows\Enums\PrinterNotifyField.cs" />
+    <Compile Include="Windows\Enums\PrinterNUPStatus.cs" />
+    <Compile Include="Windows\Enums\PrinterSetup.cs" />
+    <Compile Include="Windows\Enums\PrintingMedia.cs" />
+    <Compile Include="Windows\Enums\PrintQuality.cs" />
+    <Compile Include="Windows\Enums\PrintResultAction.cs" />
+    <Compile Include="Windows\Enums\RasterOperation.cs" />
+    <Compile Include="Windows\Enums\ClippingOperationMode.cs" />
+    <Compile Include="Windows\Enums\RenderingIntent.cs" />
+    <Compile Include="Windows\Enums\StreamType.cs" />
+    <Compile Include="Windows\Enums\StretchingMode.cs" />
+    <Compile Include="Windows\Enums\TrueTypeOption.cs" />
+    <Compile Include="Windows\Enums\VolumeSupport.cs" />
+    <Compile Include="Windows\Interface\IBitmapInfoHeader.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Windows\Interface\IUnknownVtbl.cs" />
+    <Compile Include="Windows\OperatingSystemVersion.cs" />
+    <Compile Include="Windows\OSVersionInfo.cs" />
+    <Compile Include="Windows\Structs\BITMAP.cs" />
+    <Compile Include="Windows\Structs\BITMAPINFO.cs" />
+    <Compile Include="Windows\Structs\BITMAPINFOHEADER.cs" />
+    <Compile Include="Windows\Structs\BITMAPV4HEADER.cs" />
+    <Compile Include="Windows\Structs\BITMAPV5HEADER.cs" />
+    <Compile Include="Windows\Structs\BLENDFUNCTION.cs" />
+    <Compile Include="Windows\Structs\CHOOSECOLORA.cs" />
+    <Compile Include="Windows\Structs\CHOOSECOLORW.cs" />
+    <Compile Include="Windows\Structs\CHOOSEFONTA.cs" />
+    <Compile Include="Windows\Structs\CHOOSEFONTW.cs" />
+    <Compile Include="Windows\Structs\CIEXYZ.cs" />
+    <Compile Include="Windows\Structs\COLORADJUSTMENT.cs" />
+    <Compile Include="Windows\Structs\CEXYZTRIPLE.cs" />
+    <Compile Include="Windows\RGB.cs" />
+    <Compile Include="Windows\Structs\DEVMODEA.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Windows\Structs\DEVMODEW.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Windows\Structs\DEVNAMES.cs" />
+    <Compile Include="Windows\Structs\FINDREPLACEA.cs" />
+    <Compile Include="Windows\Structs\FINDREPLACEW.cs" />
+    <Compile Include="Windows\Structs\GRADIENT_RECT.cs" />
+    <Compile Include="Windows\Structs\GRADIENT_TRIANGLE.cs" />
+    <Compile Include="Windows\Structs\GUID.cs" />
+    <Compile Include="Windows\Structs\HELPINFO.cs" />
+    <Compile Include="Windows\Interface\IUnknown.cs" />
+    <Compile Include="Windows\Structs\INITCOMMONCONTROLSEX.cs" />
+    <Compile Include="Windows\Structs\InnerStruct1A.cs" />
+    <Compile Include="Windows\Structs\InnerStruct1W.cs" />
+    <Compile Include="Windows\Structs\InnerStruct2A.cs" />
+    <Compile Include="Windows\Structs\InnerStruct2W.cs" />
+    <Compile Include="Windows\Structs\LOGBRUSH.cs" />
+    <Compile Include="Windows\Enums\WindowsMessage.cs" />
+    <Compile Include="Windows\Structs\AUXCAPS.cs" />
+    <Compile Include="Windows\Structs\AVICOMPRESSOPTIONS.cs" />
+    <Compile Include="Windows\Structs\AVISTREAMINFO.cs" />
+    <Compile Include="Windows\Structs\DSBROWSEINFO.cs" />
+    <Compile Include="Windows\Enums\OEMBitmap.cs" />
+    <Compile Include="Windows\Structs\LOGFONTA.cs" />
+    <Compile Include="Windows\Structs\LOGFONTW.cs" />
+    <Compile Include="Windows\Structs\MSGBOXPARAMSA.cs" />
+    <Compile Include="Windows\Structs\MSGBOXPARAMSW.cs" />
+    <Compile Include="Windows\Structs\OFSTRUCT.cs" />
+    <Compile Include="Windows\Structs\OPENFILENAMEA.cs" />
+    <Compile Include="Windows\Structs\OPENFILENAMEW.cs" />
+    <Compile Include="Windows\Structs\PRINTDLGA.cs" />
+    <Compile Include="Windows\Structs\PRINTDLGEXA.cs" />
+    <Compile Include="Windows\Structs\PRINTDLGEXW.cs" />
+    <Compile Include="Windows\Structs\PRINTDLGW.cs" />
+    <Compile Include="Windows\Structs\PIXELFORMATDESCRIPTOR.cs" />
+    <Compile Include="Windows\Structs\POINT.cs" />
+    <Compile Include="Windows\Structs\PRINTER_NOTIFY_OPTIONS.cs" />
+    <Compile Include="Windows\Structs\PRINTER_NOTIFY_OPTIONS_TYPE.cs" />
+    <Compile Include="Windows\Structs\PRINTPAGERANGE.cs" />
+    <Compile Include="Windows\Structs\PAGESETUPDLGA.cs" />
+    <Compile Include="Windows\Structs\PAGESETUPDLGW.cs" />
+    <Compile Include="Windows\Structs\RECT.cs" />
+    <Compile Include="Windows\Structs\RGBQUAD.cs" />
+    <Compile Include="Windows\Structs\SIZE.cs" />
+    <Compile Include="Windows\Structs\TRIVERTEX.cs" />
+    <Compile Include="Windows\Structs\Union1A.cs" />
+    <Compile Include="Windows\Structs\Union1W.cs" />
+    <Compile Include="Windows\Structs\Union2A.cs" />
+    <Compile Include="Windows\Structs\Union2W.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Implemented.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
